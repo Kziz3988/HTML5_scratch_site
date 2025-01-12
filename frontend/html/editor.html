@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Scratch在线编程</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/frontend/img/favicon.ico">
+		<link rel="bookmark" type="image/x-icon" href="/frontend/img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/frontend/css/index.css">
+	</head>
+	<body>
+		<nav class="top">
+			<ul>
+                <li>
+                    <a id="backtoindex" style="background-image:url('/frontend/img/favicon.ico');background-size:30%;background-repeat:no-repeat;"></a>
+				</li>
+				<li style="background-color:#3C57C4;width:60%;">
+				</li>
+                <li>
+					<a id="save" style="color:white">保存</a>
+				</li>
+                <li>
+					<a id="release" style="color:white">发布</a>
+				</li>
+                <li>
+					<a id="my" style="color:white">我的</a>
+				</li>
+			</ul>
+		</nav>
+        <nav class="right" id="online">
+			<ul>
+				<li>
+                    <a href="/editor">开始创作</a>
+				</li>
+                <li>
+					<a href="/myprojects">我的作品</a>
+				</li>
+                <li>
+					<a id="logout" href="/">登出账号</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="registerbox" style="display:none">
+            <h2 id="boxtitle" style="display:block;height:15%;padding:0 0 0 0;color:white;">保存作品<br></h2>
+			<div id="logspan" class="inp">
+                <span>作品标题：</span>
+            </div>
+			<div id="loginput" class="inp">
+                <input id="ptitle" type="text" placeholder="请输入标题">
+            </div>
+            <button id="confirm">确认</button>
+            <button id="cancel">取消</button>
+            <span id="err"></span>
+        </div>
+		<div id="overlay"></div>
+        <iframe id="ifra" src="/Scratch3.0"></iframe>
+		<script type="text/javascript" src="/frontend/js/global.js"></script>
+        <script type="text/javascript" src="/frontend/js/editor.js"></script>
+	</body>
+</html>
